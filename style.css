@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+#hero {
+
+    background-image: url(img/hero.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero::after {
+    content: '';
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.navbar {
+    background-color: #000;
+
+
+}
+
+.navbar nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+
+
+}
+
+.navbar ul li {
+    padding: 7px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: orangered;
+
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+}
+
+.hero {
+
+    text-align: center;
+    color: #fff;
+    margin: 100px;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
+    margin-top: 180px;
+}
+
+.hero p {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.hero a {
+    text-decoration: none;
+    background-color: rgb(36, 34, 34);
+    width: 200px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border: 0.5px rgb(36, 34, 34) solid;
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    border-radius: 20px;
+    margin-top: 70px;
+    transition: 0.2s;
+}
+
+.hero a:hover {
+    background-color: white;
+    color: orangered;
+    border: 0.5px white solid;
+
+}
+
+#food-ideas h1 {
+    text-align: center;
+    color: orangered;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 40px;
+
+}
+
+#food-ideas {
+    margin-top: 100px;
+    margin: 100px 0;
+    min-height: 70vh;
+
+}
+
+.img-container {
+
+    display: flex;
+    margin-right: 40px;
+
+}
+
+.image-wrapper {
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+
+
+}
+
+.image-wrapper img {
+    width: 300px;
+    height: 300px;
+    filter: grayscale(0.8);
+    transition: 0.5s;
+}
+
+.image-wrapper-text {
+    width: 300px;
+    height: 80px;
+    position: relative;
+    bottom: 83.5px;
+    background-color: #000;
+    color: #ffff;
+    opacity: 0;
+
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.image-wrapper-text p {
+    margin-top: 5px;
+}
+
+.image-wrapper:hover .image-wrapper-text {
+    opacity: 0.8;
+
+}
+
+.image-wrapper:hover img {
+    filter: grayscale(0);
+}
+
+
+
+#intro {
+    background-color: orangered;
+    display: flex;
+    padding: 20px 10px;
+
+}
+
+.profile-pic {
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+.profile-pic img {
+    width: 200px;
+
+
+}
+
+.profile-pic img:hover {
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+    ;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    transform: scale(1.1);
+}
+
+.profile-text {
+    padding: 10px 100px;
+}
+
+.profile-text h1 {
+    color: #fff;
+    letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+    font-size: 2rem;
+
+}
+
+.profile-text p {
+    color: aliceblue;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.profile-text a {
+    text-decoration: none;
+    background-color: rgb(36, 34, 34);
+    width: 200px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border: 0.5px rgb(36, 34, 34) solid;
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    border-radius: 20px;
+    margin-top: 70px;
+    transition: 0.2s;
+}
+
+.profile-text a:hover {
+    background-color: white;
+    color: orangered;
+    border: 0.5px white solid;
+}
+#recipes h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: orangered;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 40px
+}
+.all-recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-container-group {
+    display: flex;
+    /* create flex container */
+    justify-content: center;
+    /* center children horizontally */
+
+    margin: 30px 80px;
+
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 10px;
+
+}
+
+.recipe-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.recipe-img img {
+    width: 100%;
+    height: 210px;
+}
+
+.recipe-text {
+    background-color: rgb(36, 34, 34);
+
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.recipe-text h3 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+
+}
+
+.recipe-text p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+#recipes {
+    margin-top: 100px;
+
+}
+
+.recipe-img:hover img {
+    transform: scale(1.1);
+}
+
+.recipe-text a {
+    text-decoration: none;
+    background-color: orangered;
+    color: #fff;
+    width: 160px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border: 0.5px rgb(36, 34, 34) solid;
+    font-size: 1.2rem;
+    letter-spacing: 0.02rem;
+    border-radius: 20px;
+    margin-top: 18px;
+    transition: 0.2s;
+}
+
+.recipe-text a:hover {
+    background-color: #fff;
+    color: orangered;
+}
+
+
+
+
+
+
+#footer {
+    padding: 100px 50px;
+    background-color: #efefef;
+    position: relative;
+    color: brown;
+}
+
+.footer-row {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-right {
+    margin-bottom: 20px;
+}
+
+.footer-right {
+
+    text-align: left;
+}
+
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+}
+.footer-left a {
+    text-decoration: none;
+    background-color: orangered;
+    color: #fff;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+border: 0.5px orangered;
+    font-size: 1.2rem;
+    letter-spacing: 0.02rem;
+
+    margin-top: 28px;
+    transition: 0.2s;
+}
+
+.footer-left a:hover {
+    background-color: #fff;
+    color: orangered;
+    border: 0.5px solid black;
+}
+
+
+.footer-row h1 {
+    margin: 10px 0;
+}
+
+.footer-row p {
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+
+.footer-right .fa {
+    font-size: 20px;
+    color: orangered;
+    margin: 10px;
+}
+
+.footer-img {
+    width: 10%;
+    opacity: 0.2;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+
+}
+
+.social-links {
+    text-align: center;
+    margin-bottom: -3%;
+
+}
+
+.social-links .fa {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border: 1px solid orangered;
+    margin: 40px 10px 0;
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s;
+    display: inline-block;
+
+}
+
+.social-links .fa-facebook:hover {
+    background: #27c0ff;
+    color: #fff;
+    transform: translateY(-7px);
+    border: 0px;
+}
+
+.social-links .fa-instagram:hover {
+    background: #e727b7;
+    color: #fff;
+    transform: translateY(-7px);
+    border: 0px;
+}
+
+.social-links .fa-twitter:hover {
+    background: #27c0ff;
+    color: #fff;
+    transform: translateY(-7px);
+    border: 0px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    #hero{
+        display: flex;
+        background-position: left;
+   align-items: center;
+        justify-content: center;
+    }
+    .hero h1{
+        font-size: 4rem;
+        
+   }
+   .hero {margin: 15px;}
+
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.image-wrapper{
+    margin-bottom: 20px;
+}
+.navbar{
+    display: none;
+}
+}
