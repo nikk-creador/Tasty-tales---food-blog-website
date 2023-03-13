@@ -16,7 +16,6 @@ html,body
 
 
 
-
 #hero {
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +45,7 @@ html,body
 
 .navbar {
     background-color: #000;
-
+  
 
 }
 
@@ -60,9 +59,18 @@ html,body
 
 }
 
+
+#logo{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 520px;
+font-size: 1.7rem;
+ 
+}
 .navbar ul li {
+
     padding: 7px 35px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 
 }
@@ -70,11 +78,13 @@ html,body
 .navbar ul li a {
     text-decoration: none;
     color: orangered;
+    transition: 0.1s;
 
 }
 
 .navbar ul li a:hover {
     color: #fff;
+    text-decoration: underline;
 }
 
 .hero {
@@ -120,21 +130,20 @@ html,body
     border: 0.5px white solid;
 
 }
-
-#food-ideas h1 {
-
+.section-title h1{
     text-align: center;
     color: orangered;
     font-size: 3rem;
     letter-spacing: 0.1rem;
-    margin-bottom: 40px;
-
+    margin: 48px 0; 
+    text-transform: uppercase; 
 }
+
 
 #food-ideas {
     margin-top: 100px;
     margin: 100px 0;
-
+min-height: 70vh;
 }
 
 .img-container {
@@ -195,6 +204,8 @@ html,body
     padding: 20px 10px;
 
 }
+
+
 
 .profile-pic {
     padding-left: 50px;
@@ -258,14 +269,6 @@ html,body
     border: 0.5px white solid;
 }
 
-#recipes h1 {
-    text-transform: uppercase;
-    text-align: center;
-    color: orangered;
-    font-size: 3rem;
-    letter-spacing: 0.1rem;
-    margin-bottom: 40px
-}
 
 .all-recipes {
     display: flex;
@@ -365,7 +368,7 @@ html,body
 
 #footer {
     padding: 100px 50px;
-    background-color: #efefef;
+    background-color: #fff;
     position: relative;
     color: brown;
 }
@@ -496,7 +499,7 @@ html,body
 
     #hero {
         display: flex;
-        background-position: left;
+        background-position: right;
         align-items: center;
         justify-content: center;
     }
@@ -554,7 +557,10 @@ html,body
     }
 
     .profile-pic {
-        text-align: center;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .profile-pic img {
