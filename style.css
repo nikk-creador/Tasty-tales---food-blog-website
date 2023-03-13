@@ -554,7 +554,7 @@ border: 0.5px orangered;
     margin-top: 52px;
 }
 .footer-row{
-    width: 94%;
+    width: 100%;
 }
 .footer-row p {
 display: flex;
