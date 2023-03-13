@@ -384,7 +384,7 @@
     text-decoration: none;
     background-color: orangered;
     color: #fff;
-    width: 150px;
+    width: 160px;
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
@@ -395,6 +395,10 @@ border: 0.5px orangered;
 
     margin-top: 28px;
     transition: 0.2s;
+}
+.fa-newspaper-o{
+
+    margin: 5px;
 }
 
 .footer-left a:hover {
@@ -499,4 +503,69 @@ border: 0.5px orangered;
 .navbar{
     display: none;
 }
+
+.recipe-container-group{
+    display: flex;
+    flex-direction: column;
 }
+.recipe-text p {
+    font-size: 1rem;
+    line-height: 1rem;
+ 
+    padding: 0px 15px;
+}
+.recipe-text h3{
+    font-size: 1.5rem;
+}
+.recipe-text a {
+    width: 125px;
+    padding: 6px 20px;
+    font-size: 1rem;
+    margin-top: 14px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+}
+.profile-pic{
+    text-align: center;
+}
+.profile-pic img{
+    width: 150px;
+}
+.profile-text p {
+    line-height: 1.2rem;
+}
+.profile-text{
+    padding: 10px 25px;
+}
+.profile-text a{
+    width: 180px;
+    margin-top: 45px;
+    margin-left:60px ;
+}
+#footer{
+    padding: 100px 0;
+    font-size: 0.8rem;
+
+}
+.footer-img{
+    width: 18%;
+    margin-top: 52px;
+}
+.footer-row{
+    width: 94%;
+}
+.footer-row p {
+display: flex;
+}
+.footer-left{
+    margin-top: 170px;
+
+}
+.footer-left a{
+    padding: 10px 15px;
+    width: 150px;
+}
+}
+
