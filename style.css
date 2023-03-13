@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
 }
 html,body
 {
@@ -12,15 +14,20 @@ html,body
     overflow-x :hidden; 
 }
 
-#hero {
 
+
+
+#hero {
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url(img/hero.jpg);
     min-height: 100vh;
+    width: 100%;
     background-size: cover;
-    background-position: center;
+
     position: relative;
     z-index: 1;
-    background-position: center;
+
     align-items: center;
     justify-content: center;
 }
@@ -115,6 +122,7 @@ html,body
 }
 
 #food-ideas h1 {
+
     text-align: center;
     color: orangered;
     font-size: 3rem;
@@ -126,7 +134,6 @@ html,body
 #food-ideas {
     margin-top: 100px;
     margin: 100px 0;
-    min-height: 70vh;
 
 }
 
@@ -250,7 +257,8 @@ html,body
     color: orangered;
     border: 0.5px white solid;
 }
-#recipes h1{
+
+#recipes h1 {
     text-transform: uppercase;
     text-align: center;
     color: orangered;
@@ -258,6 +266,7 @@ html,body
     letter-spacing: 0.1rem;
     margin-bottom: 40px
 }
+
 .all-recipes {
     display: flex;
     flex-direction: column;
@@ -384,6 +393,7 @@ html,body
     align-items: center;
     margin-left: auto;
 }
+
 .footer-left a {
     text-decoration: none;
     background-color: orangered;
@@ -393,14 +403,15 @@ html,body
     display: inline-block;
     padding: 10px 20px;
     text-align: center;
-border: 0.5px orangered;
+    border: 0.5px orangered;
     font-size: 1.2rem;
     letter-spacing: 0.02rem;
 
     margin-top: 28px;
     transition: 0.2s;
 }
-.fa-newspaper-o{
+
+.fa-newspaper-o {
 
     margin: 5px;
 }
@@ -483,93 +494,114 @@ border: 0.5px orangered;
 
 @media screen and (max-width: 767px) {
 
-    #hero{
+    #hero {
         display: flex;
         background-position: left;
-   align-items: center;
+        align-items: center;
         justify-content: center;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 4rem;
-        
-   }
-   .hero {margin: 15px;}
+
+    }
+
+    .hero {
+        margin: 15px;
+    }
 
 
-.img-container{
-    display: flex;
-    flex-direction: column;
-    
-}
-.image-wrapper{
-    margin-bottom: 20px;
-}
-.navbar{
-    display: none;
-}
+    .img-container {
+        display: flex;
+        flex-direction: column;
 
-.recipe-container-group{
-    display: flex;
-    flex-direction: column;
-}
-.recipe-text p {
-    font-size: 1rem;
-    line-height: 1rem;
- 
-    padding: 0px 15px;
-}
-.recipe-text h3{
-    font-size: 1.5rem;
-}
-.recipe-text a {
-    width: 125px;
-    padding: 6px 20px;
-    font-size: 1rem;
-    margin-top: 14px;
-}
-#intro{
-    display: flex;
-    flex-direction: column;
-}
-.profile-pic{
-    text-align: center;
-}
-.profile-pic img{
-    width: 150px;
-}
-.profile-text p {
-    line-height: 1.2rem;
-}
-.profile-text{
-    padding: 10px 25px;
-}
-.profile-text a{
-    width: 180px;
-    margin-top: 45px;
-    margin-left:60px ;
-}
-#footer{
-    padding: 100px 0;
-    font-size: 0.8rem;
+    }
 
-}
-.footer-img{
-    width: 18%;
-    margin-top: 52px;
-}
-.footer-row{
-    width: 100%;
-}
-.footer-row p {
-display: flex;
-}
-.footer-left{
-    margin-top: 170px;
+    .image-wrapper {
+        margin-bottom: 20px;
+    }
 
-}
-.footer-left a{
-    padding: 10px 15px;
-    width: 150px;
-}
-}
+    .navbar {
+        display: none;
+    }
 
+    .recipe-container-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipe-text p {
+        font-size: 1rem;
+        line-height: 1rem;
+
+        padding: 0px 15px;
+    }
+
+    .recipe-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .recipe-text a {
+        width: 125px;
+        padding: 6px 20px;
+        font-size: 1rem;
+        margin-top: 14px;
+    }
+
+    #intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        text-align: center;
+    }
+
+    .profile-pic img {
+        width: 150px;
+    }
+
+    .profile-text p {
+        line-height: 1.2rem;
+    }
+
+    .profile-text {
+        padding: 10px 25px;
+    }
+
+    .profile-text a {
+        width: 180px;
+        margin-top: 45px;
+        margin-left: 60px;
+    }
+
+    #footer {
+        padding: 100px 0;
+        font-size: 0.8rem;
+
+    }
+
+    .footer-img {
+        width: 18%;
+        margin-top: 52px;
+    }
+
+    .footer-row {
+        width: 100%;
+        padding:0  10px;
+    }
+
+    .footer-row p {
+        display: flex;
+    }
+
+    .footer-left {
+        margin-top: 170px;
+
+    }
+
+    .footer-left a {
+        padding: 10px 15px;
+        width: 150px;
+    }
+}
