@@ -26,8 +26,7 @@ CSS3
 To install the Tasty Tales website on your local machine, follow these steps:
 
 Usage
-To use the Tasty Tales website, go to https://tastytales-foodblog.netlify.app/ in your web browser. You can create an account to submit articles, recipes, and reviews.
-Contributing
+To use the Tasty Tales website, go to https://tastytales-foodblog.netlify.app/ in your web browser.
 We welcome contributions from the community to improve and expand the Tasty Tales website. If you would like to contribute, please follow these steps:
 
 Fork the repository.
