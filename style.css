@@ -121,6 +121,7 @@ label.logo {
     font-size: 35px;
     margin-top: 25px;
     padding-right: 400px;
+    display: flex;
 
 }
 
