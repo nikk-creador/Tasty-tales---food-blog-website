@@ -682,3 +682,56 @@ a:hover {
         display: block;
     }
 }
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    nav ul{
+        display: flex;
+    }
+    nav ul li a{
+        padding: 15px;
+        margin-right: 0;
+    }
+    label.logo{
+        padding-right: 110px;
+    }
+    .hero h1{
+        font-size: 8rem;
+        letter-spacing: 1.1rem;
+    }
+    .hero p {
+        font-size: 3rem;
+        margin-top: 25px;
+    }
+    .hero a{
+        width: 260px;
+        margin-top: 100px;
+        padding: 15px 39px;
+        font-size: 2rem;
+    }
+    .img-container{
+        flex-direction: column;
+    }
+    .image-wrapper {
+        margin-bottom: 35px;
+    }
+    .recipe-container-group{
+        flex-direction: column;
+    }
+    .profile-pic img{
+        width: 225px;
+    }
+    .profile-pic{
+        margin: auto 0;
+    }
+    .profile-text p{
+        margin-top: 20px;
+    }
+    #footer{
+        padding: 100px 20px;
+        margin-bottom: 35px;
+    }
+    .footer-left{
+        margin-top: 110px;
+    }
+}
