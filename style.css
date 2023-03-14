@@ -693,14 +693,12 @@ a:hover {
         margin-right: 0;
     }
     label.logo{
-        padding-right: 310px;
+        padding-right: 110px;
     }
     .hero h1{
-        font-size: 8rem;
         letter-spacing: 1.1rem;
     }
     .hero p {
-        font-size: 3rem;
         margin-top: 25px;
     }
     .hero a{
@@ -717,6 +715,9 @@ a:hover {
     }
     .recipe-container-group{
         flex-direction: column;
+    }
+    .recipe-text a{
+        margin-top: 25px;
     }
     .profile-pic img{
         width: 225px;
