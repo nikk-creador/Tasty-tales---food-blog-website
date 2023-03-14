@@ -137,6 +137,8 @@ nav ul li {
 }
 
 nav ul li a {
+    
+    font-weight: 600;
     color: orangered;
     font-size: 17px;
     padding: 7px 35px;
